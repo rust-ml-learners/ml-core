@@ -1,0 +1,12 @@
+[package]
+name = "nn-framework"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "nn-framework - Educational ML primitive"
+
+[dependencies]
+
+[lib]
+name = "nn_framework"
+path = "src/lib.rs"

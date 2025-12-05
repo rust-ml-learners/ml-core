@@ -1,0 +1,12 @@
+[package]
+name = "mini-transformer"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Example: mini-transformer"
+
+[dependencies]
+
+[[bin]]
+name = "mini-transformer"
+path = "src/main.rs"

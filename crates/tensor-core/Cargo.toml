@@ -1,0 +1,22 @@
+[package]
+name = "tensor-core"
+version = "0.1.0"
+edition = "2021"
+description = "Minimal tensor implementation with focus on educational clarity"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/rust-ml-learners/rust-ml-primitives"
+readme = "README.md"
+
+keywords = ["tensor", "machine-learning", "neural-networks", "educational"]
+categories = ["science", "algorithms", "data-structures"]
+
+authors = ["rust-ml-learners"]
+
+[dependencies]
+rand = "0.8"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[features]
+default = []

@@ -1,0 +1,12 @@
+[package]
+name = "lstm-primitives"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "lstm-primitives - Educational ML primitive"
+
+[dependencies]
+
+[lib]
+name = "lstm_primitives"
+path = "src/lib.rs"

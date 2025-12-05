@@ -1,0 +1,12 @@
+[package]
+name = "mini-torch"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "mini-torch - Framework built from primitives"
+
+[dependencies]
+
+[[bin]]
+name = "mini-torch"
+path = "src/main.rs"

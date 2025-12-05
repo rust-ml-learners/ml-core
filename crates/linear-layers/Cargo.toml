@@ -1,0 +1,12 @@
+[package]
+name = "linear-layers"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "linear-layers - Educational ML primitive"
+
+[dependencies]
+
+[lib]
+name = "linear_layers"
+path = "src/lib.rs"

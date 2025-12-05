@@ -1,0 +1,70 @@
+[workspace]
+members = [
+    # Foundational primitives
+   "crates/tensor-core",
+   "crates/autodiff-core",
+   "crates/text-primitives",
+   "crates/embedding-core",
+   "crates/rnn-primitives",
+   "crates/lstm-primitives",
+   "crates/attention-primitives",
+   "crates/linear-layers",
+   "crates/optimizer-core",
+
+# Higher level frameworks and abstractions
+    "crates/nn-framework",
+
+# Example frameworks built from primitives
+    "frameworks/mini-torch",
+    "frameworks/rusty-llm",
+
+# Example projects
+    "examples/standalone-tensor",
+    "examples/text-classifier",
+    "examples/char-rnn",
+    "examples/mini-transformer",
+
+]
+
+resolver = "2"
+
+# Shared workspace dependencies
+[workspace.dependencies]
+thiserror = "2.0"
+anyhow = "1.0"
+rayon = "1.8"
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+
+# Workspace metadata
+[workspace.package]
+version = "0.1.0"
+authors = ["rust-ml-learners"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/rust-ml-learners/ml-core"
+description = "Foundational ML primitives in Rust"
+
+
+# Linting and formatting configs
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+
+# Build optimisation
+[profile.release]
+lto = true
+codegen-units = 1
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+[package]
+name = "attention-primitives"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "attention-primitives - Educational ML primitive"
+
+[dependencies]
+
+[lib]
+name = "attention_primitives"
+path = "src/lib.rs"
